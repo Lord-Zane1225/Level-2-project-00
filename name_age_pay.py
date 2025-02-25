@@ -86,4 +86,4 @@ while True:
     print()
     pay_method = string_check("How would you like to pay? ", payment_ans, 2)
     print()
-    print(f"{name} has bought a ticket with {pay_method}. ", "*")
+    print(f"{name} has bought a ticket with {pay_method}. ")

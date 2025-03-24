@@ -65,7 +65,7 @@ def string_check(question, valid_answers=('yes', 'no'), letter_amt_req=1):
             elif response == func_item[:letter_amt_req]:
                 return func_item
 
-        print(f"Please choose an answer from {valid_answers[0]} / {valid_answers[1]}. ")
+        print(f"Please enter either {valid_answers[0]} or {valid_answers[1]}. ")
 
 
 def instructions():

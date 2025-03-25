@@ -82,7 +82,7 @@ The program will record the ticket sale and calculate the
 ticket cost (and profit). 
 
 Once you have either sold all of the tickets or entered the 
-exit code ('xxx'), the program will display the ticket sales 
+exit code ('finished'), the program will display the ticket sales 
 information and write the data to a text file. 
 
 It will also choose one lucky ticket holder who wins the 
@@ -139,7 +139,7 @@ while tickets_sold < MAX_TICKETS:
     name = not_blank("Name: ")
 
     # exit code
-    if name == "xxx":
+    if name == "finished":
         break
 
     # check age and output error if too young / old
@@ -221,8 +221,8 @@ total_profit_string = f"total profit : ${total_profit:.2f}"
 
 lucky_winner_string = f"The lucky winner is {winner}. Their ticket worth ${ticket_won:.2f} is free!"
 
-final_total_paid_string = "Total paid is now ${total_paid - ticket_won:.2f}"
-final_profit_string = "Total profit is now ${total_profit - profit_won:.2f}"
+final_total_paid_string = f"Total paid is now ${total_paid - ticket_won:.2f}"
+final_profit_string = f"Total profit is now ${total_profit - profit_won:.2f}"
 
 
 if tickets_sold == MAX_TICKETS:
